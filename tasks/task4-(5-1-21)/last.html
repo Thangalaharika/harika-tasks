@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zero_to_last</title>
+</head>
+<body>
+<script>
+var i,b;
+var arr = [23,8,0,8,77,0,11,0];
+function moveZero(b) {
+    for ( i = b.length - 1; i >= 0; i--) {
+        if (b[i] === 0) {
+            b.splice(i, 1);
+            b.push(0);
+        }
+    }
+    return b;
+}
+document.write(moveZero(arr));
+
+</script>
+</body>
+</html>
