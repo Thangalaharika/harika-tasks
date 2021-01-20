@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form validation</title>
+	<style>
+		p{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	
+<form name="myForm" action=" " onclick="return validation()" method="post">
+	<label>Name:</label>
+	<input type="text" name="fname" id="fname" placeholder="please enter your name"><p> please  fill the name</p>
+	<label>phone number:</label>
+	<input type="tel" name="fname1" id="fname1" placeholder="please enter your number" ><p> please  fill the number</p>
+	<label>Email:</label>
+	<input type="email" name="email" id="fname2" placeholder="please enter your email" ><p> please  fill the email</p>
+	<label>Password:</label>
+	<input type="password" name="pwd" id="fname3" placeholder="please enter your password" ><p> please  fill the password</p>
+	<label>Gender:</label>
+	<input type="radio" name="gender" id="male">male
+	<input type="radio" name="gender" id="female">female
+	<input type="radio" name="gender" id="custom">custom
+	<br><br>
+	<input type="submit" name="submit">
+
+</form>
+<script>
+	function validation() {
+		 var name1 = document.forms["myForm"]["fname"].value;
+          var psw1 = document.forms["myForm"]["fname1"].value;
+           var email1 = document.forms["myForm"]["fname2"].value;
+            var pwd1 = document.forms["myForm"]["fname3"].value;
+if(name1 == "") {
+   document.getElementById("fname").style.border='1px solid red';
+   document.getElementById("fname1").style.border='1px solid black';
+   return false;
+}
+	if(psw1 == "") {
+   document.getElementById("fname1").style.border='1px solid red';
+   document.getElementById("fname").style.border='1px solid black';
+   return false;
+}
+else if(email1 == ""){
+	document.getElementById("fname").style.border='1px solid black';
+	 document.getElementById("fname1").style.border='1px solid black';
+	document.getElementById("fname2").style.border='1px solid red';
+	return false;
+}
+ else if (pwd1 == "") {
+ 		
+		document.getElementById("fname").style.border='1px solid black';
+		document.getElementById("fname1").style.border='1px solid black';
+		document.getElementById("fname2").style.border='1px solid black';
+		
+		document.getElementById("fname3").style.border="1px solid red";
+	return false;
+}
+}
+</script>
+</body>
+</html>
