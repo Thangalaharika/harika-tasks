@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string & array methods</title>
+</head>
+<body>
+	<p id="result">
+<script>
+	// push()
+	var employee=['jhon','kelvin','rose']
+	var empresult=employee.push('rob');
+	document.getElementById("result").innerHTML = employee;
+    //typeof()
+    var products='apple'
+    alert(typeof(products));
+   //unshift()
+    var books=['javascript','html','typescript']
+    var booksresult=books.unshift('reactjs');
+	document.getElementById("result").innerHTML = books;
+    //check()
+	var employee1=['jhon','kelvin','rose']
+	var empresult1=employee1.includes('rose');
+	document.getElementById("result").innerHTML = empresult1;
+	//concat()
+	var array1=['apple','moto','lenovo']
+	var array2=['redmi','oneplus']
+	var arrayresult=array1.concat(array2);
+	document.getElementById("result").innerHTML = arrayresult;
+	//indexOf()
+	var books1=['javascript','html','typescript','reactjs']
+	var booksresult1=books1.indexOf('reactjs');
+	document.getElementById("result").innerHTML = booksresult1;
+</script>
+</body>
+</html>
