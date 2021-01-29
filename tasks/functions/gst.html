@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gst_product</title>
+</head>
+<body>
+<script>
+	function gstCalculation(n,gstpercent){
+		let price,gstCalculation,priceIncludingGST;
+		price=n;
+		gstpercent=18;
+		priceIncludingGST=price+(price*gstpercent/100);
+		document.write("product price including gst:"+priceIncludingGST);
+	}
+	gstCalculation(500);
+</script>
+</body>
+</html>

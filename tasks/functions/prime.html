@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prime</title>
+</head>
+<body>
+<script>
+	function test(num) {
+for (var i = 2; i < num; i++) {
+    if (num % i == 0){ 
+    	document.write(num+" is not a prime number");
+    	return false;
+}else{
+ document.write(num+" is  a prime number");
+ return true;
+}
+}
+}
+test(20);
+</script>
+</body>
+</html>

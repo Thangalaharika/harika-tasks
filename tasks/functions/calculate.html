@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculations</title>
+</head>
+<body>
+	<script>
+		var markMass, markHeight,johnMass,johnHeight,markBMI,johnBMI;
+		function calculation(markMass, markHeight,johnMass,johnHeight){
+
+markBMI = markMass / (markHeight * markHeight);
+johnBMI = johnMass / (johnHeight * johnHeight);
+
+var markHigherBMI   = markBMI > johnBMI;
+
+document.write("markBMI:"+markBMI+"<br>","jhonBMI:"+johnBMI+"<br>");
+
+if(markBMI > johnBMI){
+  document.write("true");
+}
+else {
+  document.write('false');
+}
+}
+calculation(176,6,56,5);
+	</script>
+
+</body>
+</html>

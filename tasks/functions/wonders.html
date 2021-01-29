@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wonders of the world</title>
+</head>
+<style>
+    
+      
+      .img{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .figure{
+         display: flex;
+        width:180px;
+
+       
+      }
+      figcaption{
+        flex: 1;
+        padding:10px;
+      }
+       
+</style>
+<body>
+      <p id="gallery"></p>
+      <script>
+               let wonders="";
+               let wondersgallery=[
+                   {
+                       fig :`one.jpeg `,
+                       name :`Name:TAJ MAHAL`,
+                       country:`Country:INDIA`,
+                       desc:`Desc:The Taj Mahal is a labor of love.<br> Emperor Shah Jahan built it in honor of his <br>favorite wife, Mumtaz Mahal,<br> who bore 14 children but died in labor.`
+
+                   },
+                   {
+                       fig :`itza.jpeg `,
+                       name :`Name:CHICHEN ITZA`,
+                       country:`Country:CHINA`,
+                       desc:`Desc:Chichen Itza was a major focal point<br> in the Northern Maya Lowlands from the Late Classic<br> (c. AD 600–900) through the Terminal Classic <br>(c. AD 800–900) and into the early portion <br>of the Postclassic period (c. AD 900–1200).`
+                   },
+                   {
+                       fig :`picchu.png `,
+                       name :`Name:MACHU PICCHU`,
+                       country:`Country:PERU`,
+                       desc:`Desc:Machu Picchu is a 15th-century Inca<br>  citadel, located in the Eastern Cordillera of<br>  southern Peru, on a 2,430-metre <br> (7,970 ft) mountain ridge.`
+                   },
+                   {
+                       fig :`roman.jpeg `,
+                       name :`Name:ROMAN COLOSSEU`,
+                       country:`Country:MEXICO`,
+                       desc:`Desc:The Colosseum is in Rome, the capital of Italy. <br> More precisely, it is on the east bank of <br> the Tiber, the river that crosses the <br> city, east of the ancient Roman forum.`
+                   },
+                   {
+                       fig :`christ.jpeg `,
+                       name :`Name:CHRIST REDEEMER`,
+                       country:`Country:ROME`,
+                       desc:`Desc:Christ the Redeemer is an Art Deco statue<br> of Jesus Christ in Rio De Janeiro, Brazil,<br> created by Polish-French sculptor<br> Paul Landowski and built by Brazilian`
+                   },
+                   {
+                       fig :`great_wall_of_china.jpeg `,
+                       name :`Name:GREAT WALL OF CHINA`,
+                       country:`Country:INDIA`,
+                      desc :`Desc:The Great Wall of China is a series of <br>fortifications made of stone, brick, tamped earth,<br> wood, and other materials, generally<br> built along an east-to-west line across the <br>historical northern borders of China to <br>protect the Chinese states`
+                   },
+                   {
+                       fig :"petra.jpeg",
+                       name :`Name:PETRA`,
+                       country:`Country:JORDAN`,
+                       desc:`Desc:Petra is half-built, half-carved into the <br>rock, and is surrounded by mountains riddled <br>with passages and gorges. It is one of <br>the world's most famous archaeological sites, <br>where ancient Eastern traditions blend with<br> Hellenistic architecture.`
+                   }
+
+               ];
+        function myfunction(){
+          let worlds=`<div class="img">`
+            for(let i=0;i<wondersgallery.length;i++){
+                 worlds +=`<figure>`
+                 worlds +=`<img src="C:/Users/harika/Pictures/Saved Pictures/${wondersgallery[i].fig}" alt="world" width="300px" height="300px";>`
+             
+                 worlds +=`<figcaption> ${wondersgallery[i].name}</figcaption>`
+                 worlds +=`<figcaption> ${wondersgallery[i].country}</figcaption>`
+                 worlds +=`<figcaption> ${wondersgallery[i].desc}</figcaption>`
+                worlds +=`</figure>`
+                
+        }
+        worlds +=`</div>`
+           document.getElementById('gallery').innerHTML= worlds;
+          }
+           myfunction();
+        
+          
+
+      </script>
+      
+</body>
+</html>

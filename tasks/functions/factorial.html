@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>factorial</title>
+</head>
+<body>
+	<p id="fact"></p>
+<script>
+function factorial(n){
+		var ans=1,i;
+		for(i=2;i<=n;i++) {
+                ans = ans*i;
+                document.getElementById("fact").innerHTML=ans; 
+            }}
+	factorial(6);
+</script>
+</body>
+</html>
