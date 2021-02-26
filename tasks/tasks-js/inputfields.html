@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>InputFieldBox</title>
+</head>
+<body>
+<script>
+function myFunction()
+{
+    var  first= document.getElementById("first");
+    var second = document.getElementById("second");
+    second.value = first.value;
+}
+</script>
+<form>
+<label>First Field:</label><input type="text" name="first" id="first">
+<label>Second Field:</label><input type="text" name="second" id="second"/>
+<input type="button" value="click to copy" onClick="myFunction();" />
+</form>
+
+</body>
+</html>

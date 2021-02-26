@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bulb</title>
+</head>
+<body>
+<img id="myImage" onClick="changeImage()" src="C:\Users\harika\Pictures\Saved Pictures\pic_bulboff.gif" width="200" height="200">
+
+<p>Click the light bulb to turn on/off the light.</p>
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "C:/Users/harika/Pictures/Saved Pictures/pic_bulboff.gif";
+  } else {
+    image.src = "C:/Users/harika/Pictures/Saved Pictures/pic_bulbon.gif";
+  }
+}
+</script>
+</body>
+</html>

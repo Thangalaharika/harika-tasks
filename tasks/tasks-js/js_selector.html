@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_selectors</title>
+</head>
+<body>
+<p>this is using by query selector</p>
+<p class="demo"> class selector</p>
+<p id="demo1">this is using by id selector</p>
+<h2>this is using by tag selector</h2>
+<button onclick="myFunction()">query selector</button>
+<button onclick="myFunction1()">id selector</button>
+<button onclick="myFunction2()">class selector</button>
+<button onclick="myFunction3()">tag selector</button>
+<button onclick="myFunction4()">queryselectorall</button>
+
+<script>
+	function myFunction() {
+	    document.querySelector("p").style.border = " 1px solid red";
+	}
+	function myFunction1() {
+	    document.getElementById("demo1").style.backgroundColor = "red";
+	}
+	function myFunction2() {
+	    document.getElementsByClassName("demo")[0].innerHTML = "this is a by using Class selector";
+	}
+	function myFunction3() {
+	    document.getElementsByTagName("h2")[0].innerText = "tag selector";
+	}
+	function myFunction4() {
+		var x, i;
+          x = document.querySelectorAll("p");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.backgroundColor = "skyblue";
+  }}
+</script>
+</body>
+</html>

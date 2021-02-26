@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ascending and descending order</title>
+</head>
+<body>
+<script>
+	function myFunction() {
+		var arr=[23,45,7,8,122,55,67];
+		 arr.sort(function(a, b){return a-b});
+		 document.write("ascending order"+arr);
+		 document.write("<br>")
+	}
+	myFunction();
+
+	function myFunction1() {
+		var arr1=[23,45,7,8,122,55,67];
+		 arr1.sort(function(a, b){return b-a});
+		 document.write("descending order"+arr1);
+	}
+	myFunction1();
+</script>
+</body>
+</html>
